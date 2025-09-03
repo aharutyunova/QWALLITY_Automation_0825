@@ -4,6 +4,7 @@ print("Vladimir Voskanyan" "\n")
 my_background = "I am a QA specialist at AMX"
 print(my_background)
 
-sum = 5 + 10
+a = 5
+b = 10
 
-print(sum)
+print(a+b)
