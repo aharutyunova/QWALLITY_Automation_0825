@@ -9,3 +9,6 @@ sum = 2+8
 print(sum)
 
 # TODO Very good job, everything is correct
+a = 10
+a.__float__(a)
+print(type(a))
