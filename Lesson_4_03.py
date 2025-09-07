@@ -4,3 +4,5 @@ Expected Result : 'I have a dog and I love it'''''
 
 string_1 = input("input the string: ")
 print(string_1.replace('cut', 'dog', 1))
+
+# Anna - Correct

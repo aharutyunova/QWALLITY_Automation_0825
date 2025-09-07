@@ -4,3 +4,5 @@ Expected Result : 'w3ce' '''
 
 my_string = input("Input your string ", )
 print(my_string[0:2] + my_string[-2::])
+
+# Correct, you could also write my_string[:2] + my_string[-2:]
