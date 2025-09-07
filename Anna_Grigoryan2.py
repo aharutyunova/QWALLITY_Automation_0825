@@ -8,7 +8,7 @@ print(x)
 Sample String : 'w3resource'
 Expected Result : 'w3ce'"""
 sample_string= 'w3resource'
-x=sample_string[0:2]
+x=sample_string[0:2] # TODO you could also write x=sample_string[:2]
 y=sample_string[-2:]
 print(x+y)
 
@@ -61,3 +61,5 @@ result=x_int+y_int
 print(result)
 reversed_result ="".join(reversed(str(result)))
 print(reversed_result) 
+
+# Anna - Everything is correct, just please pay attention to the PEP8 standard.
