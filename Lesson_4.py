@@ -35,3 +35,55 @@ Expected Output: 51
 
 """
 
+# 1. Calculate the length of a string
+my_string = 'Here is string for your exercise!'
+print("1. Length of string:", len(my_string))
+
+
+# 2. Get a string made of the first 2 and the last 2 chars
+sample_str = 'w3resource'
+b = sample_str[0:2]
+c = sample_str[-2:]
+result = "".join([b, c])
+print("2.", result)
+
+# 3. Replace 'cut' word with 'dog'
+sample_str = 'I have a cut and I love it'
+result = sample_str.replace('cut', 'dog')
+print("3. Result:", result)
+
+
+# 4. Reverse 123 to 321 in text
+sample_str = "I have 123 books"
+number = "123"
+reversed_number = "".join(reversed(number))
+result = sample_str.replace(number, reversed_number)
+print("4.", result)
+
+# 5. Replace all occurrences of 'five' with 'one'
+sample_str = "five five was a race horse, two two was one too."
+result = sample_str.replace('five', 'one')
+print("5. Result:", result)
+
+
+# 6. Check whether a specified value is contained in a group of values
+def check_value(value, group):
+    return value in group
+
+
+print("6.", check_value(3, [1, 5, 8, 3]))
+print("6.", check_value(-1, [1, 5, 8, 3]))
+
+
+# 7. Solve (x + y) * (x + y)
+x, y = 4, 3
+result = (x + y) * (x + y)
+print(f"7. ({x} + {y}) ^ 2 = {result}")
+
+
+# # 8. Convert float values to integer, sum them, then reverse result
+x, y = 2.5, 13.75
+x_int, y_int = int(x), int(y)
+total = x_int + y_int
+reversed_result = "".join(reversed(str(total)))
+print("8. Result:", reversed_result)
