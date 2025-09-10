@@ -1,0 +1,74 @@
+# 1
+my_list = [10, 30, 40]
+sum = 0
+for x in my_list:
+    sum += x
+print(sum)
+
+# 2
+dublic_list = [1, 1, 2, 3, 3]
+new_list = []
+for y in dublic_list:    
+    if y not in new_list:
+        new_list.append(y)
+print(new_list)
+
+# 3
+spec_list = [1, 2, 3, 4, 5, 7, 8, 9]
+spec_list.pop(5)
+spec_list.pop(4)
+spec_list.pop(0)
+print(spec_list)
+
+# 4
+
+first_list = [1, 2, 4, 7, 8]
+secod_list = [10, 1, 3, 4, 8]
+for i in first_list:
+    for e in secod_list:
+        if i == e:
+            first_list.remove(e)
+            break
+        else:
+            continue
+print(first_list)
+
+# 5 Using ChatGPT
+t = (("a", 1), ("b", 2), ("c", 3))
+d = dict(t)
+print(d)
+# 6
+
+my_top = (1, 2, "test", 3)
+add_element = ("tst", 5, 3)
+my_top += add_element
+print(my_top)
+
+# 7
+
+my_dict = {'Name': 'Vladimir', 'Surname': 'Voskanyan'}
+my_dict['Age'] = 25
+print(my_dict)
+
+# 8
+
+dict_2 = {'John': 30, 'Mikael': 40}
+max_age = max(dict_2.values())
+min_age = min(dict_2.values())
+print("Max", max_age)
+print("Min", min_age)
+
+# 9 
+
+first_set = {1, 2, 6, 9}
+second_set = {"t", 82, "QA"}
+union_set = first_set.union(second_set)
+print(union_set)
+
+# 10
+
+dict_about_me = {'Name': 'Vladimir', 
+                 'Age': 25, 
+                 'Address': 'Gyurjyan 17', 
+                 'Phone_number': ['077800114', '097200114']}
+print(dict_about_me)
