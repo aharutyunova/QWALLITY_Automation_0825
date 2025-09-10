@@ -65,3 +65,4 @@ print(sum)
 reversed_num = int("".join(reversed(sum)))
 print(reversed_num)
 
+# Anna - everything is correct, good job!!!
