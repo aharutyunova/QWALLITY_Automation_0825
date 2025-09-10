@@ -61,3 +61,5 @@ result=x_int+y_int
 print(result)
 reversed_result ="".join(reversed(str(result)))
 print(reversed_result) 
+
+print(my_string.find("exersice"))
