@@ -10,7 +10,7 @@ Sample String : 'w3resource'
 Expected Result : 'w3ce' """
 
 sample_string = 'w3resource'
-new_string = sample_string[0:2] + sample_string[-2:]
+new_string = sample_string[0:2] + sample_string[-2:] #TODO You could also write sample_string[:2] + sample_string[-2:]
 print("Exercise_2")
 print(new_string)
 
@@ -74,3 +74,5 @@ y = 13.75
 a = int(x) + int(y)
 print("Exercise_8")
 print("".join(reversed(str(a))))
+
+# Good Job!!!
