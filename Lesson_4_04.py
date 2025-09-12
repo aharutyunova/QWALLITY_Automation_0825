@@ -5,3 +5,5 @@ Expected Result : 'I have 321 books'''''
 string_1 = input("input the string: ")
 text_to_reverse = '123'
 print(string_1.replace(text_to_reverse, text_to_reverse[::-1]))
+
+# Anna - Correct
