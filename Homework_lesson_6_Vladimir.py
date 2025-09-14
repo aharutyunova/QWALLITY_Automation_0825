@@ -8,6 +8,9 @@ for i in my_list:
         my_list.pop()
         print(my_list)
         break
+
+# Anna - Correct
+
 # 2
 s = "Python 3.13"
 digit = 0
@@ -20,6 +23,8 @@ for i in s:
 print("Letter =", letter)
 print("digit =", digit)
 
+# Anna - Correct
+
 # 3
 for a in range(11):
     if a < 6:
@@ -28,6 +33,7 @@ for a in range(11):
         print("*", end=" ")
 print()
 
+# Anna - Correct
 # 5 
 numbers = [1, 2, 3, 4, 7, 8, 9, 10]
 a = 0
@@ -38,6 +44,8 @@ if len(numbers) % 2 == 0:
 else:
     b = (len(numbers) - 1) // 2
     print("median", numbers[b])
+# TODO: In your example, the median should be calculated as (numbers[a-1] + numbers[a])/2 
+# because when the list has an even number of elements, the median is the average of the two middle numbers.
 
 # 4
 mounth_info = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 
@@ -50,6 +58,7 @@ days_in_month = {
 }
 season = ["Spring", "Summer", "Autumn", "Winter"]
 mounth = int(input("Input Mounth"))
+
 if mounth in mounth_info.keys():
     day = int(input("Input Day"))
     if 1 <= day <= days_in_month[mounth]:
@@ -65,3 +74,5 @@ if mounth in mounth_info.keys():
 else:
     print("Invalid day or mounth")
 
+# TODO: You should define the `my_season` variable outside of the if-block to make it visible outside of the conditional block.
+# Also, you didn’t handle the case of an invalid day (e.g., day not in the valid range for the given month).
