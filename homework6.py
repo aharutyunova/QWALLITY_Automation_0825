@@ -11,6 +11,8 @@
 #     numbers.append(next_number)
 # print("Fibonacci series up to 50:", numbers)
 
+# Anna - Correct
+
 # 2.	Write a Python program that accepts a string and calculate the
 # number of digits and letters.
 # Sample Data: Python 3.13
@@ -30,6 +32,9 @@
 
 # print("Letters", sum_of_letters)
 # print("Digits", sum_of_digits)
+
+# Anna - Correct
+
 # 3.	Write a Python program to print alphabet pattern 'L'
 # Expected Output:
 # *                                                                    
@@ -39,8 +44,8 @@
 # *                                                                      
 # *                                                                      
 # *****
-# rows = 7
-# cols = 5
+rows = 7
+cols = 5
 
 # for i in range(rows):
 #     for j in range(cols):
@@ -49,6 +54,14 @@
 #         else:
 #             print(" ", end="")
 #     print()
+# TODO The result is correct, but the solution is not very efficient since it uses an unnecessary inner loop.
+# You could just have the same result with 1 loop
+
+for i in range(rows):
+    if i == rows - 1:
+        print("*" * cols)
+    else:
+        print("*")
 
 # 4.	Write a Python program that reads two integers representing a month and
 #  day and prints the season for that month and day.
@@ -76,16 +89,23 @@
 # print("Month:", month)
 # print("Day:", day)
 # print("Season:", season)
+
+# TODO: Generally correct. You just didn’t handle exceptional cases, for example, an incorrect day or month.
+
 # 5.	Write a Python program to find the median of few values.
 # Expected Output:
 # numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7                                               
 # median calculation example:
-# numbers = [15, 26, 29, 33]
-# n = len(numbers)
-# median = 0
-# if n % 2 == 0:
-#     median = (numbers[n//2 - 1] + numbers[n//2]) / 2
-# else:
-#     median = numbers[n//2]
+numbers = [15, 10, 20, 33, 50]
+n = len(numbers)
+median = 0
+if n % 2 == 0:
+    median = (numbers[n//2 - 1] + numbers[n//2]) / 2
+else:
+    median = numbers[n//2]
 
-# print("Median:", median)
+print("Median:", median)
+
+# Anna - Correct
+
+# Good Job!!!
