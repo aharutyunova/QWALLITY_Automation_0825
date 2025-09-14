@@ -7,6 +7,7 @@ while first<=50:
     next = first + second      
     first = second             
     second = next
+# Anna - Correct
 
 # 2
 text="Python 3.13"
@@ -15,11 +16,15 @@ digits=sum(1 for i in text if i.isdigit())
 print(letters)
 print(digits)
 
+# Anna - Correct
+
 # 3
 count=5
 for i in range(count):
     print("*")
 print("*"*6)
+
+# Anna - Correct
 
 # 4
 
@@ -31,6 +36,7 @@ if Months == Months or Month==7 and Day == Day:
 else:
         print("Season doesn't exist")
 
+# TODO: You checked only one specific case, but this does not solution of the task.
 # 5        
     
 numbers=[15, 26, 28, 33]
@@ -49,6 +55,8 @@ for i in numbers:
         else:
          median=i[len(i)//2]
         print(median)
-            
 
+# Anna - Correct
 
+# TODO All solutions except the 4th task are correct. 
+# Don’t forget to follow the PEP8 standard.
