@@ -4,6 +4,7 @@ while fib_nums[-1] + fib_nums[-2] <= 50:
     fib_nums.append(fib_nums[-1] + fib_nums[-2])
 print(fib_nums)
 
+# Anna - Correct
 
 # task N 2
 user_input = input("Please type: ")
@@ -17,6 +18,8 @@ for i in user_input:
 print("Digits:", digits)
 print("Letters:", letters)
 
+# Anna – correct. You could also use i.isalpha() or i.isdigit() methods to
+# check if i is a letter or a digit.
 
 # task N 3
 for i in range(6):
@@ -24,6 +27,7 @@ for i in range(6):
 for j in range(5):
     print("*", end=" ")
 
+# Anna – correct. One additional newline is also needed after the last *.
 
 # task N 4
 days_in_month = {
@@ -62,6 +66,7 @@ if user_input_month in days_in_month:
 else:
     print("Invalid month.")
 
+# Anna - Very good solution
 
 # task N 5
 input_numbers = input("Please input your number: ")
@@ -75,3 +80,12 @@ if length % 2 == 0:
 else:
     mid = int(input_numbers[length // 2])
     print("Result (odd length):", mid)
+
+# TODO Currently you treat each character of the string as a number.
+# For example, if I input three numbers "10 20 30", your code will treat it as
+# "102030" (a 6-digit string).
+# Also, you convert the result to an integer after calculating the median,
+#  which changes the correct value. So it would be better, if you want to get
+# a list as input, to ask users to enter digits separated by a delimiter
+# (e.g., comma), then split the string, 
+# convert each element to float/int, and only after that calculate the median
