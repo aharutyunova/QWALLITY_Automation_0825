@@ -45,30 +45,10 @@ newtup = tuple(list_6)
 print(newtup)
 
 #7 Write a Python program to add a key with corresponding value to a dictionary.
-mydict_7 = {0: 'apple', 1: 'banana', 2: 'cherry'}
-mydict_7[8] = 'fruit'
-print(mydict_7)
 
 
 #8 Write a Python program to get the maximum and minimum value in a dictionary.
-mydict_8 = {"apple": 10, "banana": 20, "cherry": 5}
-print(max(mydict_8.values()))
-print(min(mydict_8.values()))
-
 
 #9 Write a Python program to create a union of sets.
-setA = {"apple", "banana"}
-setB = {"cherry", "banana"}
-setC = {"a", "b"}
-union_ABC = setA.union(setB, setC)
-print(union_ABC)
 
-#10 Write a Python program to create dict with your name, age, address, education, and two phone numbers.
-my_info = {
-    "name": "Anush",
-    "age": 25,
-    "address": "Here should be myAdress",
-    "education": "Master",
-    "phones": ["+37455-000000", "+37491-111111"]
-} 
-print(my_info)
+#10 Write a Python program to create dict with your name, age, address, education, and two phone numbers. 
