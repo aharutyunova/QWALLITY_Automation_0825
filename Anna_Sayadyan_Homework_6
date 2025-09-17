@@ -62,6 +62,9 @@ print(f"Month: {months[month]}({month})")
 print(f"Day: {day}")
 print(f"Season: {season}")
 
+# TODO: Use `month in (x, y, z)` instead of `month == (x, y, z)`.
+# Also, would be better to check for invalid days and months — see the sample solution.
+
 """5.	Write a Python program to find the median of few values. 
 Expected Output:
 numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7
@@ -69,7 +72,7 @@ numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7
 median calculation example: 
 """
 a = 0
-numbers = [15, 26, 28, 33]
+numbers = [15, 26, 28, 33, 50]
 if len(numbers) % 2 != 0:
     a = len(numbers) // 2
     print(numbers[a])

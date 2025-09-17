@@ -4,15 +4,22 @@ my_list = [39, 45, 62, 47, 63, 2, 0, 15]
 sum = sum(my_list)
 print(sum)
 
+# TODO: Correct, but I expected you to write the logic of sum here
+
 #2 Write a Python program to remove duplicates from a list.
 list2 = [50, 6, 90, 50, 2, 9, 6]
 new_set2 = set(list2)
 print(new_set2)
 
+# TODO Correct, you could aslo convert the result back to list
+
 #3 Write a Python program which print a specified list after removing the 0th, 4th and 5th elements.  
 list3 = [5, "hello", 25.9, "bye", 852, 692, 5, 20, 8]
 result = list3[1:4] + list3[6:9]
 print(result)
+
+# TODO: This works, but instead of hardcoding slices, you can remove the exact indexes. 
+#       Start deleting from the biggest index so the positions of other items don’t change.
 
 #4 Write a Python program to get the difference between the two lists.
 list4 = [54, 85, 63, 74, "hi"]
@@ -20,15 +27,21 @@ list5 = ["hello", 54, 89, "hi"]
 list6 = list(set(list4) ^ set(list5))
 print(list6)
 
+# Anna- correct
+
 #5 Write a Python program to convert a tuple to a dictionary.
 tuple_for_convert = (("a", 1), ("b", 2), ("c", 3))
 converted_dict = dict(tuple_for_convert)
 print(converted_dict)
 
+# Anna- correct
+
 #6 Write a Python program to add an item in a tuple.
 my_tup = (5, 9, "hey")
 new_tup = my_tup + ("add",)
 print(new_tup)
+
+# Anna- correct
 
 #7 Write a Python program to add a key with corresponding value to a dictionary.
 cosmetics = {
@@ -38,6 +51,8 @@ cosmetics = {
 }
 cosmetics["Value"] = "35$"
 print(cosmetics)
+
+# Anna- correct
 
 #8 Write a Python program to get the maximum and minimum value in a dictionary.
 dict_min_max = {
@@ -49,10 +64,14 @@ dict_min_max = {
     }
 print(f"Max Value : {max(dict_min_max.values())}, Min Value : {min(
     dict_min_max.values())}")
+# Anna- correct
+
 #9 Write a Python program to create a union of sets.
 tropical_fruites = {"Mango", "Passion fruit", "Lychee", "Papaya"}
 temperate_fruites = {"Apple", "Strawberry", "Apricot"}
 print(tropical_fruites.union(temperate_fruites))
+
+# Anna- correct
 
 #10 Write a Python program to create dict with your name, age, address, education, and two phone numbers. 
 my_personal_dict = {
@@ -63,3 +82,5 @@ my_personal_dict = {
     "Phone numbers": ["+37477741852", "+37477852963"]
 }
 print(my_personal_dict)
+
+# Anna- correct
