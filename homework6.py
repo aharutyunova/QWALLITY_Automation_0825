@@ -18,6 +18,7 @@ while a <= n:
 
 print(numbers)
 
+# Anna - Correct
 
 #Write a Python program that accepts a string and calculate the number of digits and letters.   
 # Sample Data: Python 3.13
@@ -42,6 +43,7 @@ for ch in data:
 print(letters)
 print(digits)
 
+# Anna - Correct
 
 #Write a Python program to print alphabet pattern 'L'  
 # Expected Output:
@@ -61,7 +63,8 @@ for i in range(rows):
         print("*")              
     else:
         print("*" * cols)     
- 
+ # Anna - Correct
+
 
 #Write a Python program that reads two integers representing a month and day and prints the season for that month and day.  
 # Expected Output:
@@ -84,6 +87,8 @@ print(month)
 print(day)
 print(season_result)
 
+# TODO The general solution is correct, but you didn't handle incorrect month/day cases
+
 #Write a Python program to find the median of few values. 
 # Expected Output:
 # numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7
@@ -105,3 +110,5 @@ if n2 % 2 == 1:
 else:    
     median2 = (numbers2[n2 // 2 - 1] + numbers2[n2 // 2]) / 2
 print(median2)
+
+# Anna - Correct
