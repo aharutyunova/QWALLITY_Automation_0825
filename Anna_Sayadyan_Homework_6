@@ -1,0 +1,78 @@
+"""1.	Write a Python program to get the Fibonacci series between 0 to 50. 
+Note : The Fibonacci Sequence is the series of numbers : 
+0, 1, 1, 2, 3, 5, 8, 13, 21, ....
+Every next number is found by adding up the two numbers before it.
+Expected Output : 0 1 1 2 3 5 8 13 21 34 """
+a, b = 0, 1
+while a <= 50:
+    print(a, end=" ")
+    a, b = b, a + b
+print() 
+
+"""2.	Write a Python program that accepts a string and calculate the number of digits and letters.  
+Sample Data: Python 3.13
+Expected Output:
+Letters 6
+Digits 3 """
+letters = digits = 0
+my_string = "Hello25"
+for item in my_string:
+    if item.isalpha():
+        letters += 1
+    elif item.isdigit():
+        digits += 1
+print("Letters", letters)
+print("Digits", digits)
+
+"""3.	Write a Python program to print alphabet pattern 'L'  
+Expected Output:
+*                                                                      
+*                                                                      
+*                                                                      
+*                                                                      
+*                                                                      
+*                                                                      
+***** """
+for row in range(7):   # 7 rows tall
+    if row < 6:        # first 6 rows -> just one '*'
+        print("*")
+    else:              # last row -> 5 '*'
+        print("*" * 5)
+
+"""4.	Write a Python program that reads two integers representing a month and day and prints the season for that month and day.  
+Expected Output:
+Month: July(7)                   
+Day: 31   
+Season: Summer                                                    
+"""
+month = int(input("Enter month (1-12): "))
+day = int(input("Enter day (1-31): "))
+months = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+season = ""
+if month == (12, 1, 2):
+    season = "Winter"
+elif month == (3, 4, 5):
+    season = "Spring"
+elif month == (6, 7, 8):
+    season = "Summer"
+else:
+    season = "Autumn"
+print(f"Month: {months[month]}({month})")
+print(f"Day: {day}")
+print(f"Season: {season}")
+
+"""5.	Write a Python program to find the median of few values. 
+Expected Output:
+numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7
+                                                 
+median calculation example: 
+"""
+a = 0
+numbers = [15, 26, 28, 33]
+if len(numbers) % 2 != 0:
+    a = len(numbers) // 2
+    print(numbers[a])
+else: 
+    a = len(numbers) // 2
+    print((numbers[a-1] + numbers[a]) // 2)
