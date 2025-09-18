@@ -12,6 +12,8 @@ while a <= 50:
     a, b = b, a+b
 print(list1)    
 
+# Anna - Correct
+
 '''2.	Write a Python program that accepts a string and calculate the number of digits and letters.  
 Sample Data: Python 3.13
 Expected Output:
@@ -31,6 +33,8 @@ for i in text1:
 print(digits) 
 print(letters)
 
+# Anna - Correct
+
 '''
 3.	Write a Python program to print alphabet pattern 'L'  
 Expected Output:
@@ -46,6 +50,7 @@ for i in range(6):
     print("*")
 print("*****")    
 
+# Anna - Correct
 '''
 4.	Write a Python program that reads two integers representing a month and day and prints the season for that month and day.  
 Expected Output:
@@ -54,23 +59,25 @@ Day: 31
 Season: Summer                                                    
 
 '''
-day = int(input("Enter day: "))
+# day = int(input("Enter day: "))
 
 
-if 1 <= day <= 31:
-    month = int(input("Enter month: "))
-    if month in range(3, 6):
-        print("Spring")
-    elif month in range(6, 9):
-        print("Summer")
-    elif month in range(9, 12):
-        print("Autumn")
-    elif month in range(1, 3) or month == 12:
-        print("Winter")
-    else:
-        print("Entered month is not correct")    
-else:
-    print("Entered day is not correct")     
+# if 1 <= day <= 31:
+#     month = int(input("Enter month: "))
+#     if month in range(3, 6):
+#         print("Spring")
+#     elif month in range(6, 9):
+#         print("Summer")
+#     elif month in range(9, 12):
+#         print("Autumn")
+#     elif month in range(1, 3) or month == 12:
+#         print("Winter")
+#     else:
+#         print("Entered month is not correct")    
+# else:
+#     print("Entered day is not correct")     
+
+# Anna – generally correct. Please also check the sample solution.
 
 '''
 5.	Write a Python program to find the median of few values. 
@@ -78,7 +85,7 @@ Expected Output:
 numbers: 15, 26, 28, 33   or   1, 4, 5, 6, 7
                                                  
 '''
-list5 = [15, 26, 28, 33]
+list5 = [15, 26, 28, 33, 10]
 list5.sort()
 len5 = len(list5)
 if len5 % 2 == 1:
@@ -86,3 +93,5 @@ if len5 % 2 == 1:
 else:
     median = (list5[len5//2 - 1] + list5[len5//2])/2
 print(median)        
+
+# Anna - Correct
